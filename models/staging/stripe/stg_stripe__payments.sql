@@ -3,4 +3,4 @@ select
     , orderid as order_id
     , status as payment_status
     , amount
-from raw.stripe.payment
+from {{ source('stripe', 'payment') }}
