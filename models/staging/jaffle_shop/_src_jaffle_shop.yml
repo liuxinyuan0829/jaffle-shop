@@ -5,10 +5,10 @@ sources:
     config:
       freshness:
         warn_after:
-          count: 30
+          count: 60
           period: day
         error_after:
-          count: 60
+          count: 90
           period: day
     tables:
       - name: customers
